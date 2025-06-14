@@ -80,22 +80,22 @@ NASA_API_KEY=DEMO_KEY
 
 nasa-data-explorer/
 ├── backend/
-│   ├── routes/
-│   │   └── apod.js
-│   │   └── mars.js
-│   └── index.js
+│ ├── routes/
+│ │ ├── apod.js
+│ │ └── mars.js
+│ └── index.js
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ApodViewer.jsx
-│   │   │   └── MarsViewer.jsx
-│   │   └── App.jsx
-│   ├── index.html
-│   └── tailwind.config.js
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── ApodViewer.jsx
+│ │ │ └── MarsViewer.jsx
+│ │ └── App.jsx
+│ ├── index.html
+│ ├── tailwind.config.js
+│ └── postcss.config.js
 │
 └── README.md
-
 
 
 ## ✅ Assessment Criteria Checklist
