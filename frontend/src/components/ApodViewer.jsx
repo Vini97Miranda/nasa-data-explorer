@@ -1,19 +1,22 @@
 import { useEffect, useState } from 'react';
+import { API_BASE_URL } from '../config';
 
 const ApodViewer = () => {
   const [data, setData] = useState(null);
   const [date, setDate] = useState('');
   const [error, setError] = useState(null);
 
-  const fetchApod = (selectedDate = '') => {
+  const fetchApod = async (selectedDate = '') => {
     const query = selectedDate ? `?date=${selectedDate}` : '';
-    fetch(`http://localhost:5000/api/apod${query}`)
-      .then((res) => {
-        if (!res.ok) throw new Error('Failed to fetch APOD');
-        return res.json();
-      })
-      .then(setData)
-      .catch((err) => setError(err.message));
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/apod${query}`);
+      if (!res.ok) throw new Error('Failed to fetch APOD');
+      const json = await res.json();
+      setData(json);
+      setError(null);
+    } catch (err) {
+      setError(err.message || 'Unknown error');
+    }
   };
 
   useEffect(() => {
@@ -26,12 +29,21 @@ const ApodViewer = () => {
     fetchApod(selected);
   };
 
-  if (error) return <p className="text-red-400 text-center">Error: {error}</p>;
-  if (!data) return <p className="text-gray-400 text-center">Loading...</p>;
+  if (error)
+    return (
+      <p className="text-red-400 text-center mt-4">
+        ⚠️ Error fetching data: {error}
+      </p>
+    );
+
+  if (!data)
+    return <p className="text-gray-400 text-center mt-4">Loading...</p>;
 
   return (
     <div className="bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center">
-      <h2 className="text-2xl font-semibold mb-4 text-center">Astronomy Picture of the Day 🌌</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-center">
+        Astronomy Picture of the Day 🌌
+      </h2>
 
       <input
         type="date"
@@ -58,7 +70,9 @@ const ApodViewer = () => {
           />
         )}
 
-        <p className="mt-4 text-justify max-w-3xl text-white">{data.explanation}</p>
+        <p className="mt-4 text-justify max-w-3xl text-white">
+          {data.explanation}
+        </p>
       </div>
     </div>
   );
