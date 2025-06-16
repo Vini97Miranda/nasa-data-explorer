@@ -1,90 +1,108 @@
 # 🚀 NASA Data Explorer
 
-Explore breathtaking space imagery and data from NASA's public APIs — including the Astronomy Picture of the Day (APOD) and Mars Rover photos.
+Explore breathtaking space imagery and data from NASA's public APIs — including the **Astronomy Picture of the Day (APOD)** and **Mars Rover** photos.
+
+---
 
 ## 🌌 About the Project
 
-This full-stack web application was developed as part of a software engineering coding challenge. It uses NASA's APIs to allow users to:
+This full-stack web application was developed as part of a software engineering coding challenge.
 
-- View the Astronomy Picture of the Day with explanations
-- Browse Mars Rover photos by selecting a specific Earth date
-- Interact with a responsive and visually engaging interface
+It integrates with NASA's public APIs to allow users to:
+
+- View the **Astronomy Picture of the Day** with full description
+- Browse **Mars Rover** images by selecting specific Earth dates
+- Interact with a clean, responsive, and engaging interface
+
+---
 
 ## ⚙️ Technologies Used
 
-### Frontend:
+### 🖥️ Frontend
 - React
 - Vite
 - Tailwind CSS
 
-### Backend:
+### 🛠️ Backend
 - Node.js
 - Express.js
 - NASA Open APIs
 
-### Deployment:
-- Frontend: Vercel
-- Backend: Render
+### ☁️ Deployment
+- Frontend: [Vercel](https://nasa-data-explorer-eight.vercel.app/)
+- Backend: [Render](https://nasa-api-service.onrender.com)
+
+---
 
 ## 📸 Features
 
-- 🌠 Astronomy Picture of the Day (APOD)
-  - View today's image or pick a date
-  - Displays image or video + explanation text
-- 🛸 Mars Rover Photo Viewer
-  - Select a date and explore rover-captured images
-  - Filter by mission date (camera filter coming soon!)
-- 🔍 Responsive Design & Dark Mode
-- 🚦 Loading states and error messages
+### 🌠 Astronomy Picture of the Day (APOD)
+- View today’s image or video
+- Pick a date to explore past APODs
+- Displays explanation and media dynamically
 
-## 🧪 To Run Locally
+### 🛸 Mars Rover Photos
+- Select a date and fetch photos from the Mars rovers
+- Displays multiple rover images and camera details
 
-### 1. Clone the repo
+### ✅ Extras
+- Responsive design for mobile and desktop
+- Graceful loading states and error messages
 
-git clone https://github.com/seu-usuario/nasa-data-explorer.git
+---
+
+## 🧪 Run Locally
+
+### 1. Clone the repository
+
+git clone https://github.com/vinimiranda/nasa-data-explorer.git
 cd nasa-data-explorer
-
-
-### 2. Backend Setup
 
 cd backend
 npm install
 npm start
 
-
-Runs on http://localhost:5000
-
-### 3. Frontend Setup
-
+Runs at: http://localhost:5000
 
 cd frontend
 npm install
 npm run dev
 
+Runs at: http://localhost:5173
 
-Runs on http://localhost:5173
+🔐 Environment Variables
 
-## 🔐 Environment Variables
-
-Optional: create a `.env` file in the backend folder:
+Create a .env file in the backend folder with your NASA API key (or use the demo key):
 
 NASA_API_KEY=DEMO_KEY
 
+In the frontend, you can also set the backend URL:
 
-## 🌐 Live Demo
-
-- Frontend: https://nasa-explorer.vercel.app  
-- Backend: https://nasa-api-service.onrender.com
+VITE_API_URL=https://nasa-api-service.onrender.com
 
 
-## ✅ Assessment Criteria Checklist
+🌐 Live Demo
 
-- [x] React, Node.js, Express
-- [x] Clean UI & responsive design
-- [x] NASA API integration
-- [x] Error handling and loading states
-- [x] Good code structure and documentation
-- [x] Deployment with Vercel + Render
+Frontend: https://nasa-data-explorer-eight.vercel.app
+
+Backend: https://nasa-api-service.onrender.com/api/apod
+
+✅ Assessment Criteria Checklist
+ React + Node.js + Express
+
+ NASA API integration (APOD + Mars Rover)
+
+ Clean, responsive UI
+
+ Error handling and loading feedback
+
+ Well-structured frontend/backend code
+
+ Live deployment (Vercel + Render)
+
+ 📌 Final Note
+Optional bonus features such as dark/light mode, saving favorites, and AI were explored during development. However, they were intentionally left out of this final submission to prioritize clarity, code quality, and complete core functionality.
+
 
 ## 📧 Contact
 
