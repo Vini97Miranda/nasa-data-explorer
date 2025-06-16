@@ -56,6 +56,8 @@ It integrates with NASA's public APIs to allow users to:
 ### 1. Clone the repository
 
 git clone https://github.com/Vini97Miranda/nasa-data-explorer
+
+
 cd nasa-data-explorer
 
 cd backend
@@ -67,7 +69,9 @@ npm start
 Runs at: http://localhost:5000
 
 cd frontend
+
 npm install
+
 npm run dev
 
 Runs at: http://localhost:5173
@@ -82,7 +86,7 @@ NASA_API_KEY=DEMO_KEY
 
 In the frontend, you can also set the backend URL:
 
-VITE_API_URL=https://nasa-api-service.onrender.com
+VITE_API_URL=https://nasa-data-explorer-0948.onrender.com/api/apod
 
 ---
 
