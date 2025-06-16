@@ -131,5 +131,6 @@ Optional bonus features such as dark/light mode, saving favorites, and AI were e
 ## 📧 Contact
 
 Made by Vinicius Miranda
+
 [LinkedIn](https://www.linkedin.com/in/viniciusmiranda97/)  
 [GitHub](https://github.com/Vini97Miranda)
