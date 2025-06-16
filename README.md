@@ -85,7 +85,7 @@ VITE_API_URL=https://nasa-api-service.onrender.com
 
 Frontend: https://nasa-data-explorer-eight.vercel.app
 
-Backend: https://nasa-api-service.onrender.com/api/apod
+Backend: https://nasa-data-explorer-0948.onrender.com/api/apod
 
 ✅ Assessment Criteria Checklist
  React + Node.js + Express
