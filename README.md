@@ -30,7 +30,7 @@ It integrates with NASA's public APIs to allow users to:
 
 ### ☁️ Deployment
 - Frontend: [Vercel](https://nasa-data-explorer-eight.vercel.app/)
-- Backend: [Render](https://nasa-api-service.onrender.com)
+- Backend: [Render](https://nasa-data-explorer-0948.onrender.com/api/apod)
 
 ---
 
