@@ -98,6 +98,15 @@ Backend: https://nasa-data-explorer-0948.onrender.com/api/apod
 
 ---
 
+## 🎥 Demo Video
+
+Click the image below to watch a quick walkthrough of the NASA Data Explorer:
+
+[![Watch the demo](https://img.youtube.com/vi/RqT1aj12QmY/maxresdefault.jpg)](https://youtu.be/RqT1aj12QmY)
+
+
+---
+
 ## ✅ Assessment Criteria Checklist
 
  React + Node.js + Express
