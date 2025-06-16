@@ -70,7 +70,7 @@ npm run dev
 
 Runs at: http://localhost:5173
 
-🔐 Environment Variables
+## 🔐 Environment Variables
 
 Create a .env file in the backend folder with your NASA API key (or use the demo key):
 
@@ -81,13 +81,14 @@ In the frontend, you can also set the backend URL:
 VITE_API_URL=https://nasa-api-service.onrender.com
 
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 Frontend: https://nasa-data-explorer-eight.vercel.app
 
 Backend: https://nasa-data-explorer-0948.onrender.com/api/apod
 
-✅ Assessment Criteria Checklist
+## ✅ Assessment Criteria Checklist
+
  React + Node.js + Express
 
  NASA API integration (APOD + Mars Rover)
@@ -100,7 +101,7 @@ Backend: https://nasa-data-explorer-0948.onrender.com/api/apod
 
  Live deployment (Vercel + Render)
 
- 📌 Final Note
+ ## 📌 Final Note
 Optional bonus features such as dark/light mode, saving favorites, and AI were explored during development. However, they were intentionally left out of this final submission to prioritize clarity, code quality, and complete core functionality.
 
 
